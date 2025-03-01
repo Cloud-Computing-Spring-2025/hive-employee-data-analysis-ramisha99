@@ -119,6 +119,20 @@ SELECT * FROM employees
 WHERE emp_id IS NULL OR name IS NULL OR age IS NULL OR job_role IS NULL OR salary IS NULL 
    OR project IS NULL OR join_date IS NULL OR department IS NULL;
 
+#To exclude them from further analysis:
+
+CREATE TABLE employees_clean AS
+SELECT * FROM employees
+WHERE emp_id IS NOT NULL 
+AND name IS NOT NULL 
+AND age IS NOT NULL 
+AND job_role IS NOT NULL 
+AND salary IS NOT NULL 
+AND project IS NOT NULL 
+AND join_date IS NOT NULL 
+AND department IS NOT NULL;
+
+
 8️⃣ Join Employees and Departments (With Locations)
 
 SELECT e.*, d.location
