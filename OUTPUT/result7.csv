@@ -1,0 +1,2 @@
+employees.emp_id,employees.name,employees.age,employees.job_role,employees.salary,employees.project,employees.join_date,employees.department
+NULL,name,NULL,job_role,NULL,project,join_date,department
